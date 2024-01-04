@@ -11,6 +11,7 @@ const pool = new Pool({
     }
 });
 
+
 async function getAccesoUsuario(req, res) {
     const { nombredeusuario, pass } = req.body;
 

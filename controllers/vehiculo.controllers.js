@@ -11,6 +11,7 @@ const pool = new Pool({
     }
 });
 
+
 async function getVehiculos(req, res) {
 
     try {
