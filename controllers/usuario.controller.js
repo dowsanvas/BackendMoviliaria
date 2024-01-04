@@ -1,11 +1,14 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "MV",
-    password: "administrador",
+    user: "dowsan",
+    host: "dpg-cmb23a6d3nmc73em278g-a.oregon-postgres.render.com",
+    database: "moviliaria",
+    password: "YB1UEFUYUpf1x6KolUiaRQfPMmHYeLd1",
     port: 5432,
+    ssl: {
+        rejectUnauthorized: false, // Esto puede ser necesario en entornos de desarrollo, pero NO es recomendado en producción
+    }
 });
 
 async function getAccesoUsuario(req, res) {
